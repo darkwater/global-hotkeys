@@ -1,0 +1,11 @@
+run_as = "dark"
+shell = "bash"
+
+[keycodes]
+Alt = 56
+Super = 125
+D = 32
+
+[[hotkeys]]
+key = "Alt+Super+D"
+command = "notify-send foo"
