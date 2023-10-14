@@ -16,6 +16,7 @@ use std::iter;
 use std::os::unix::{fs::OpenOptionsExt, io::OwnedFd};
 use std::path::Path;
 use std::process::Command;
+use std::time::Duration;
 
 use crate::config::ParsedHotkey;
 
@@ -165,5 +166,7 @@ fn main() -> Result<()> {
                 true
             }
         });
+
+        std::thread::sleep(Duration::from_millis(5));
     }
 }
